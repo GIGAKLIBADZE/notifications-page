@@ -1,0 +1,70 @@
+[
+    {
+        "id": "1",
+        "profilePicture": "./images/avatar-mark-webber.webp",
+        "person": "Mark Webber",
+        "action": "reacted to your recent post",
+        "event": "My first tournament today!",
+        "isRead": false,
+        "time": "1m ago"
+    },
+
+    {
+        "id": "2",
+        "profilePicture": "./images/avatar-angela-gray.webp",
+        "person": "Angela Gray",
+        "action": "followed you",
+        "isRead": false,
+        "time": "5m ago"
+    },
+
+    {
+        "id": "3",
+        "profilePicture": "./images/avatar-jacob-thompson.webp",
+        "person": "Jacob Thompson",
+        "action": "has joined your group",
+        "event": "Chess Club",
+        "isRead": false,
+        "time": "1 day ago"
+    },
+
+    {
+        "id": "4",
+        "profilePicture": "./images/avatar-rizky-hasanuddin.webp",
+        "person": "Rizky Hasanuddin",
+        "action": "sent you a private message",
+        "isRead": true,
+        "time": "5 days ago",
+        "text": "Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game."
+    },
+
+    {
+        "id": "5",
+        "profilePicture": "./images/avatar-kimberly-smith.webp",
+        "person": "Kimberly Smith",
+        "action": "commented on your picture",
+        "isRead": true,
+        "time": "1 week ago",
+        "asidePicture": "./images/image-chess.webp"
+    },
+
+    {
+        "id": "6",
+        "profilePicture": "./images/avatar-nathan-peterson.webp",
+        "person": "Nathan Peterson",
+        "action": "reacted to your recent post",
+        "event": "5 end-game strategies to increase your win rate",
+        "isRead": true,
+        "time": "2 weeks ago"
+    },
+
+    {
+        "id": "7",
+        "profilePicture": "./images/avatar-anna-kim.webp",
+        "person": "Anna Kim",
+        "action": "left the group",
+        "event": "Chess Club",
+        "isRead": true,
+        "time": "2 weeks ago"
+    }
+]

@@ -1,0 +1,13 @@
+.main-container {
+    width: 343px;
+    background-color: #f7fafd;
+    border-radius: 8px;
+    padding: 16px 26px 16px 16px;
+}
+
+.unread-mark {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f65552;
+}
