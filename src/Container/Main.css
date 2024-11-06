@@ -1,13 +1,76 @@
-.main-container {
-    width: 343px;
-    background-color: #f7fafd;
+.sub-container {
+    display: flex;
+    gap: 13px;
+    /* background-color: #f7fafd; */
     border-radius: 8px;
     padding: 16px 26px 16px 16px;
+    margin-top: 10px;
+}
+
+.sub-container {
+    width: 343px;
+}
+
+.profile-picture {
+    width: 39px;
+    height: 39px;
+    border:  1px rgba(0, 0, 0, 0.05)
+}
+
+.person {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1c202b;
+    line-height: normal;
+}
+
+.action {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5e6778;
+    line-height: normal;
+    margin-left: 6px;
+}
+
+.time {
+    font-size: 14px;
+    font-weight: 500;
+    color: #939cad;
+    line-height: normal;
+    margin-top: 3px;
 }
 
 .unread-mark {
+    display: inline-block;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #f65552;
+    margin-left: 6px;
+}
+
+.aside-picture {
+    width: 39px;
+    height: 39px;
+    border-radius: 7px;
+}
+
+.text-container  {
+    width: 263px;
+    height: 122px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: solid 1px #dde7ee;
+    padding: 16px;
+}
+
+.text-container p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: #5e6778;
+}
+
+.event {
+    margin-left: 6px;
 }

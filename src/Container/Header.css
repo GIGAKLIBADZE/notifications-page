@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications-container {
+    display: flex;
+    gap: 9px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1c202b;
+    line-height: normal;
+    margin-top: 2px;
+}
+
+.notifications-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: #0a327b;
+}
+
+.notifications-amount p {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    line-height: normal;
+}
+
+.mark {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5e6778;    
+    line-height: normal;
+}
