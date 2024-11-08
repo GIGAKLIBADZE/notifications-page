@@ -11,7 +11,18 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Overpass', sans-serif !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
   background-color: #fff;
   padding: 24px 16px 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 33px 27px 0 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px 0 rgba(73, 97, 168, 0.05);
+  }
 }

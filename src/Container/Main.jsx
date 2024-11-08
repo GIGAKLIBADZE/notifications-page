@@ -2,49 +2,86 @@ import "./Main.css";
 import data from "../data.json";
 import { useState, useEffect } from "react";
 
-export default function Main({ setAmount, amount }) {
-  const [count, setCounter] = useState(
-    data.filter((d) => {
-      return d.isRead === false.length;
-    })
-  );
-
+export default function Main({ notification, setNotification }) {
   return (
     <>
       <div className="main-container">
-        {data.map((d, index) => (
+        {notification.map((n, index) => (
           <div
             key={index}
             className="sub-container"
-            style={d.isRead ? null : { backgroundColor: "green" }}
+            style={{
+              ...(n.isRead ? {} : { backgroundColor: "#f7fafd" }),
+              ...(index === 3 ? { display: "block" } : {}),
+              ...(index === 4 ? { alignItems: "center" } : {}),
+              ...(index === 0 ? { marginTop: "0" } : {}),
+            }}
             onClick={() => {
-              if (index <= 2 && amount > 0 && amount < 4 && !d.isRead) {
-                setAmount(amount - 1);
-                d.isRead = true;
-              }
+              const newNotifications = notification.map(
+                (currentNotification) => {
+                  if (n.id === currentNotification.id) {
+                    return {
+                      ...currentNotification,
+                      isRead: true,
+                    };
+                  }
+                  return currentNotification;
+                }
+              );
+
+              setNotification(newNotifications);
             }}
           >
-            <img
-              src={d.profilePicture}
-              alt="Profile picture"
-              className="profile-picture"
-            />
-            <div className="info">
-              <strong className="person">{d.person}</strong>
-              <span className="action">{d.action}</span>
-              <span className="event">{d.event}</span>
-              {d.isRead ? "" : <div className="unread-mark"></div>}
-              <p className="time">{d.time}</p>
+            <div className="test">
+              <img
+                src={n.profilePicture}
+                alt="Profile picture"
+                className="profile-picture"
+              />
+              <div className="info">
+                <strong className="person">{n.person}</strong>
+                <span className="action">{n.action}</span>
+                <span
+                  className="event"
+                  style={
+                    index === 2 || index === 6
+                      ? {
+                          color: "#0a327b",
+                          fontSize: "14px",
+                          fontWeight: "bold",
+                          lineHeight: "normal",
+                          marginLeft: "5.5px",
+                        }
+                      : index === 0 || index === 5
+                      ? {
+                          color: "#5e6778",
+                          fontSize: "14px",
+                          fontWeight: "bold",
+                          lineHeight: "normal",
+                          marginLeft: "4px",
+                        }
+                      : {}
+                  }
+                >
+                  {n.event}
+                </span>
+                {n.isRead ? "" : <div className="unread-mark"></div>}
+                <p className="time">{n.time}</p>
+              </div>
             </div>
-            {d.text ? (
-              <div className="text-container">
-                <p>{d.text}</p>
+
+            {n.text ? (
+              <div
+                className="text-container"
+                style={{ marginLeft: "51px", marginTop: "12px" }}
+              >
+                <p>{n.text}</p>
               </div>
             ) : (
               ""
             )}
-            {d.asidePicture ? (
-              <img src={d.asidePicture} alt="Chess" className="aside-picture" />
+            {n.asidePicture ? (
+              <img src={n.asidePicture} alt="Chess" className="aside-picture" />
             ) : (
               ""
             )}

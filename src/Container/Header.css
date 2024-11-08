@@ -40,3 +40,18 @@
     color: #5e6778;    
     line-height: normal;
 }
+
+@media (min-width: 1440px) {
+    .notifications-container {
+        gap: 11px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .mark {
+        font-size: 16px;
+    }
+}
