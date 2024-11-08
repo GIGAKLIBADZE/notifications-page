@@ -9,7 +9,8 @@ export default function Main({ notification, setNotification }) {
         {notification.map((n, index) => (
           <div
             key={index}
-            className="sub-container"
+            className={index === 4 ? "fourth-container" : "sub-container"}
+            // className="sub-container"
             style={{
               ...(n.isRead ? {} : { backgroundColor: "#f7fafd" }),
               ...(index === 3 ? { display: "block" } : {}),
