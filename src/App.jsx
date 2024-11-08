@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import "./Reset.css";
+import "./Reset.css";
 import "./App.css";
 import Header from "./Container/Header/";
 import Main from "./Container/Main/";

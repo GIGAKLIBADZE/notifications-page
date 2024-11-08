@@ -41,6 +41,11 @@
     line-height: normal;
 }
 
+.mark:hover {
+    cursor: pointer;
+    color: #0a327b;
+}
+
 @media (min-width: 1440px) {
     .notifications-container {
         gap: 11px;

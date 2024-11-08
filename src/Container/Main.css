@@ -20,7 +20,7 @@
     width: 343px;
 }
 
-.test {
+.specific-container {
     display: flex;
     gap: 13px;
 }
@@ -85,8 +85,40 @@
     color: #5e6778;
 }
 
-.event {
+.special-event {
+    color: #0a327b;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 5.5px;
+}
+
+.alternate-event {
+    color: #5e6778;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 4px;
+}
+
+
+.event,
+.special-event {
     margin-left: 6px;
+}
+
+
+.person:hover,
+.special-event:hover,
+.alternate-event:hover {
+    cursor: pointer;
+    color: #0a327b;
+}
+
+
+.text-container:hover {
+    cursor: pointer;
+    background-color: #e5effa;
 }
 
 @media (min-width: 1440px) {

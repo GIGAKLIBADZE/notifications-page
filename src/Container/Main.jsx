@@ -10,7 +10,6 @@ export default function Main({ notification, setNotification }) {
           <div
             key={index}
             className={index === 4 ? "fourth-container" : "sub-container"}
-            // className="sub-container"
             style={{
               ...(n.isRead ? {} : { backgroundColor: "#f7fafd" }),
               ...(index === 3 ? { display: "block" } : {}),
@@ -33,7 +32,7 @@ export default function Main({ notification, setNotification }) {
               setNotification(newNotifications);
             }}
           >
-            <div className="test">
+            <div className="specific-container">
               <img
                 src={n.profilePicture}
                 alt="Profile picture"
@@ -43,26 +42,33 @@ export default function Main({ notification, setNotification }) {
                 <strong className="person">{n.person}</strong>
                 <span className="action">{n.action}</span>
                 <span
-                  className="event"
-                  style={
+                  // className="event"
+                  className={
                     index === 2 || index === 6
-                      ? {
-                          color: "#0a327b",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                          lineHeight: "normal",
-                          marginLeft: "5.5px",
-                        }
+                      ? "special-event"
                       : index === 0 || index === 5
-                      ? {
-                          color: "#5e6778",
-                          fontSize: "14px",
-                          fontWeight: "bold",
-                          lineHeight: "normal",
-                          marginLeft: "4px",
-                        }
-                      : {}
+                      ? "alternate-event"
+                      : "event"
                   }
+                  // style={
+                  //   index === 2 || index === 6
+                  //     ? {
+                  //         color: "#0a327b",
+                  //         fontSize: "14px",
+                  //         fontWeight: "bold",
+                  //         lineHeight: "normal",
+                  //         marginLeft: "5.5px",
+                  //       }
+                  //     : index === 0 || index === 5
+                  //     ? {
+                  //         color: "#5e6778",
+                  //         fontSize: "14px",
+                  //         fontWeight: "bold",
+                  //         lineHeight: "normal",
+                  //         marginLeft: "4px",
+                  //       }
+                  //     : {}
+                  // }
                 >
                   {n.event}
                 </span>
